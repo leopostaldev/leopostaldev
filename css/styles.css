@@ -1,0 +1,134 @@
+/* Reset padrao CSS */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Variáveis */
+:root {
+    --color-light: #ffff;
+    --color-green: #006130;
+    --transition: 0.5s;
+}
+
+/* formatacao html */
+html {
+    font-size: 62.5%;
+}
+
+/* formatacao do body */
+body {
+    font-size: 1.6rem;
+}
+
+/* formatacao de img e link */
+a {
+    text-decoration: none;
+    color: var(--color-light);
+    font-weight: 900;
+    transition: var(--transition);
+} 
+
+img {
+    max-width: 100%;
+}
+
+/* banner */
+.banner-class {
+    padding: 20px;
+    background-color: var(--color-green);
+    text-align: center;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.banner-title {
+    font-size: 2vmin;
+    color: var(--color-light);
+}
+
+/* Elementos da pág */
+.hero {
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(4, 8, 30, .3), rgba(4,9,30,.9)), url(/assets/Imagens/pexels\ notas.jpg);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+
+.hero-content {
+    width: 60%;
+    padding: 5rem;
+    color: var(--color-light);
+}
+
+.hero-content h2 {
+    font-size: 7vmin;
+}
+
+.hero-content p {
+    font-weight: 600;
+    margin-bottom: 2rem;
+    line-height: 3.6;
+}
+
+.plan-titlediv {
+    background-image: linear-gradient(rgba(4, 8, 30, .3), rgba(4,9,30,.9)), url(/imagens/pexels-pixabay-47344.jpg);
+    background-size: 10%;
+    background-repeat: repeat;
+}
+
+.plan-title {
+    text-align: center;
+    margin: 4rem 0 2rem;
+    color: var(--color-light);
+}
+
+.plan-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+.plan-item {
+    margin: 3rem 0;
+    text-align: center;
+    padding: 2rem;
+    box-shadow: 1px 1px 30px #ccc;
+    z-index: 1;
+}
+
+.plan-item img {
+    width: 90%;
+    border-radius: 5px;
+}
+
+.plan-item h3 {
+    margin: 2rem 0;
+    font-weight: 800;
+}
+
+.plan-item p {
+    margin: 0 0 3rem;
+    width: 80%;
+}
+
+/* Responsividade */
+@media (max-width: 767px) {
+    .hero-content {
+        width: 100%;
+        padding: 3rem;
+    }
+
+    .plan-item {
+        width: 100%;
+    }
+}
